@@ -22,7 +22,7 @@ namespace BlackCoderPaginationWeatherApi.Controllers
         {
             _logger = logger;
         }
-
+               
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -33,7 +33,7 @@ namespace BlackCoderPaginationWeatherApi.Controllers
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
-            .ToArray();
+            .ToArray();               
         }
     }
 }
